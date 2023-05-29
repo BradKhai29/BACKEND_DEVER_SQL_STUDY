@@ -30,10 +30,12 @@ CREATE TABLE Customer
 (
     customerID INT UNIQUE,
     fullName VARCHAR(60),
-    phoneNumber VARCHAR(12),
+    phoneNumber VARCHAR(20),
     email VARCHAR(30),
+    gender BOOLEAN,
     CONSTRAINT Customer_PK PRIMARY KEY (customerID)
 );
+
 
 CREATE TABLE OrderProduct
 (
